@@ -1,0 +1,19 @@
+﻿@*Strongly typed View*@
+@model Product
+
+@* The at sign with the braces is a code block *@
+@{
+    Layout = "_BasicLayout";
+    ViewBag.Title = "Product Name";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    Content will go here like @Model.Name ($@Model.Price)
+</body>
+</html>
